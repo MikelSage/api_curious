@@ -11,19 +11,14 @@ RSpec.feature 'User can log in with GitHub' do
     expect(page).to_not have_content 'Login using GitHub'
   end
 
-  def stub_omniauth
-    OmniAuth.config.test_mode = true
-
-    OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
-      provider: "github",
-      uid: '12345678',
-      info: {
-        nickname: 'MikelSage',
-        email: 'michael@mike.com'
-      },
-      credentials: {
-        token: "12341b21341234n2h3"
-      }
-      })
+  scenario 'and can logout' do
+    stub_omniauth
+    visit root_path
+    click_on 'Login using GitHub'
+    expect(page).to have_content 'MikelSage'
+    click_on 'Logout'
+    expect(page).to have_content 'Login using GitHub'
+    expect(page).to_not have_content 'Logout'
+    expect(page).to_not have_content 'MikelSage'
   end
 end
