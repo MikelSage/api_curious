@@ -1,0 +1,6 @@
+<% if current_user %>
+  <h1>Welcome, <%= current_user.nickname %></h1>
+  <%= link_to 'Logout' %>
+<% else %>
+  <%= link_to 'Login using GitHub', '/auth/github' %>
+<% end %>
