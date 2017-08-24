@@ -19,10 +19,11 @@ def stub_omniauth
     uid: '12345678',
     info: {
       nickname: 'MikelSage',
-      email: 'michael@mike.com'
+      email: 'michael@mike.com',
+      image: 'https://avatars0.githubusercontent.com/u/26507085?v=4'
     },
     credentials: {
-      token: "12341b21341234n2h3"
+      token: ENV['USER_AUTH_TOKEN']
     }
     })
 end

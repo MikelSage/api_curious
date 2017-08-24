@@ -7,6 +7,7 @@ class User < ApplicationRecord
       user.email = info[:email]
       user.token = auth[:credentials][:token]
       user.provider = auth[:provider]
+      user.image_url = info[:image]
       user.save!
     end
   end

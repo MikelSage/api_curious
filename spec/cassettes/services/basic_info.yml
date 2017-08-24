@@ -1,0 +1,154 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/user
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - token 9b85b947c9494eb54d283352b5f67adf60d8325e
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 24 Aug 2017 19:35:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4981'
+      X-Ratelimit-Reset:
+      - '1503606026'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"fd63f211ffc7bf9b384fa3ab0429107f"
+      Last-Modified:
+      - Mon, 21 Aug 2017 15:37:50 GMT
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - bc2fe2fa59491eb90d96
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.058750'
+      X-Github-Request-Id:
+      - C390:44F6:1945EF9:39C9D91:599F2A92
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"MikelSage","id":26507085,"avatar_url":"https://avatars0.githubusercontent.com/u/26507085?v=4","gravatar_id":"","url":"https://api.github.com/users/MikelSage","html_url":"https://github.com/MikelSage","followers_url":"https://api.github.com/users/MikelSage/followers","following_url":"https://api.github.com/users/MikelSage/following{/other_user}","gists_url":"https://api.github.com/users/MikelSage/gists{/gist_id}","starred_url":"https://api.github.com/users/MikelSage/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/MikelSage/subscriptions","organizations_url":"https://api.github.com/users/MikelSage/orgs","repos_url":"https://api.github.com/users/MikelSage/repos","events_url":"https://api.github.com/users/MikelSage/events{/privacy}","received_events_url":"https://api.github.com/users/MikelSage/received_events","type":"User","site_admin":false,"name":"Michael
+        Sagapolutele","company":null,"blog":"","location":null,"email":"michael.sagapolutele@yahoo.com","hireable":null,"bio":null,"public_repos":28,"public_gists":8,"followers":2,"following":3,"created_at":"2017-03-18T15:48:49Z","updated_at":"2017-08-21T15:37:50Z"}'
+    http_version: 
+  recorded_at: Thu, 24 Aug 2017 19:35:46 GMT
+- request:
+    method: get
+    uri: https://api.github.com/user/starred
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - token 9b85b947c9494eb54d283352b5f67adf60d8325e
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 24 Aug 2017 19:35:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4980'
+      X-Ratelimit-Reset:
+      - '1503606026'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"02fa610a148ef6de69d8b24b40b4371f"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - bc2fe2fa59491eb90d96
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.044092'
+      X-Github-Request-Id:
+      - C391:44F5:194D912:33C1800:599F2A92
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":99945754,"name":"scoots_shop","full_name":"jimszalew/scoots_shop","owner":{"login":"jimszalew","id":15232421,"avatar_url":"https://avatars0.githubusercontent.com/u/15232421?v=4","gravatar_id":"","url":"https://api.github.com/users/jimszalew","html_url":"https://github.com/jimszalew","followers_url":"https://api.github.com/users/jimszalew/followers","following_url":"https://api.github.com/users/jimszalew/following{/other_user}","gists_url":"https://api.github.com/users/jimszalew/gists{/gist_id}","starred_url":"https://api.github.com/users/jimszalew/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jimszalew/subscriptions","organizations_url":"https://api.github.com/users/jimszalew/orgs","repos_url":"https://api.github.com/users/jimszalew/repos","events_url":"https://api.github.com/users/jimszalew/events{/privacy}","received_events_url":"https://api.github.com/users/jimszalew/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/jimszalew/scoots_shop","description":null,"fork":true,"url":"https://api.github.com/repos/jimszalew/scoots_shop","forks_url":"https://api.github.com/repos/jimszalew/scoots_shop/forks","keys_url":"https://api.github.com/repos/jimszalew/scoots_shop/keys{/key_id}","collaborators_url":"https://api.github.com/repos/jimszalew/scoots_shop/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/jimszalew/scoots_shop/teams","hooks_url":"https://api.github.com/repos/jimszalew/scoots_shop/hooks","issue_events_url":"https://api.github.com/repos/jimszalew/scoots_shop/issues/events{/number}","events_url":"https://api.github.com/repos/jimszalew/scoots_shop/events","assignees_url":"https://api.github.com/repos/jimszalew/scoots_shop/assignees{/user}","branches_url":"https://api.github.com/repos/jimszalew/scoots_shop/branches{/branch}","tags_url":"https://api.github.com/repos/jimszalew/scoots_shop/tags","blobs_url":"https://api.github.com/repos/jimszalew/scoots_shop/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/jimszalew/scoots_shop/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/jimszalew/scoots_shop/git/refs{/sha}","trees_url":"https://api.github.com/repos/jimszalew/scoots_shop/git/trees{/sha}","statuses_url":"https://api.github.com/repos/jimszalew/scoots_shop/statuses/{sha}","languages_url":"https://api.github.com/repos/jimszalew/scoots_shop/languages","stargazers_url":"https://api.github.com/repos/jimszalew/scoots_shop/stargazers","contributors_url":"https://api.github.com/repos/jimszalew/scoots_shop/contributors","subscribers_url":"https://api.github.com/repos/jimszalew/scoots_shop/subscribers","subscription_url":"https://api.github.com/repos/jimszalew/scoots_shop/subscription","commits_url":"https://api.github.com/repos/jimszalew/scoots_shop/commits{/sha}","git_commits_url":"https://api.github.com/repos/jimszalew/scoots_shop/git/commits{/sha}","comments_url":"https://api.github.com/repos/jimszalew/scoots_shop/comments{/number}","issue_comment_url":"https://api.github.com/repos/jimszalew/scoots_shop/issues/comments{/number}","contents_url":"https://api.github.com/repos/jimszalew/scoots_shop/contents/{+path}","compare_url":"https://api.github.com/repos/jimszalew/scoots_shop/compare/{base}...{head}","merges_url":"https://api.github.com/repos/jimszalew/scoots_shop/merges","archive_url":"https://api.github.com/repos/jimszalew/scoots_shop/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/jimszalew/scoots_shop/downloads","issues_url":"https://api.github.com/repos/jimszalew/scoots_shop/issues{/number}","pulls_url":"https://api.github.com/repos/jimszalew/scoots_shop/pulls{/number}","milestones_url":"https://api.github.com/repos/jimszalew/scoots_shop/milestones{/number}","notifications_url":"https://api.github.com/repos/jimszalew/scoots_shop/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/jimszalew/scoots_shop/labels{/name}","releases_url":"https://api.github.com/repos/jimszalew/scoots_shop/releases{/id}","deployments_url":"https://api.github.com/repos/jimszalew/scoots_shop/deployments","created_at":"2017-08-10T16:54:13Z","updated_at":"2017-08-23T05:36:27Z","pushed_at":"2017-08-03T16:04:17Z","git_url":"git://github.com/jimszalew/scoots_shop.git","ssh_url":"git@github.com:jimszalew/scoots_shop.git","clone_url":"https://github.com/jimszalew/scoots_shop.git","svn_url":"https://github.com/jimszalew/scoots_shop","homepage":null,"size":607,"stargazers_count":1,"watchers_count":1,"language":"Ruby","has_issues":false,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"open_issues_count":0,"forks":0,"open_issues":0,"watchers":1,"default_branch":"master","permissions":{"admin":false,"push":false,"pull":true}}]'
+    http_version: 
+  recorded_at: Thu, 24 Aug 2017 19:35:46 GMT
+recorded_with: VCR 3.0.3
