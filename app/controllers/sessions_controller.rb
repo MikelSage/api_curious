@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   def create
+    binding.pry
     user = User.update_or_create(request.env['omniauth.auth'])
     session[:user_id] = user.id
 
