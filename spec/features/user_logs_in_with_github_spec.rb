@@ -1,8 +1,11 @@
 require 'rails_helper'
 
 RSpec.feature 'User can log in with GitHub' do
-  scenario 'and see their name and no longer see the login button' do
+  before do
     stub_omniauth
+  end
+
+  scenario 'and see their name and no longer see the login button' do
     visit root_path
     expect(page).to have_content 'Login using GitHub'
     click_on 'Login using GitHub'
@@ -12,7 +15,6 @@ RSpec.feature 'User can log in with GitHub' do
   end
 
   scenario 'and can logout' do
-    stub_omniauth
     visit root_path
     click_on 'Login using GitHub'
     expect(page).to have_content 'MikelSage'
