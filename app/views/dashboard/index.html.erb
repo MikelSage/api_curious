@@ -1,13 +1,28 @@
 <div class="row">
-  <div class="col-md-8">
-    <div class="row">
+  <div class="col-md-10">
+    <div class="row user-recent-activity">
       <p>Your Recent Activity</p>
+      <table class="table">
+        <tr>
+          <th>Date</th>
+          <th>Repo</th>
+          <th>Message</th>
+        </tr>
+        <% @user_recent_events.each do |event| %>
+          <% author = event[:commit][:author] %>
+          <tr>
+            <td><%= author[:date][0..9] %></td>
+            <td><%= event[:repository][:full_name] %></td>
+            <td><%= event[:commit][:message] %></td>
+          </tr>
+        <% end %>
+      </table>
     </div>
     <div class="row">
       <p>Followed Recent Activity</p>
     </div>
   </div>
-  <div class="col-md-4" style="background">
+  <div class="col-md-2 text-right">
     <p><%= "Starred Repos (#{@user_info[:starred_repos]})" %></p>
     <p><%= "Followers (#{@user_info[:followers]})" %></p>
     <p><%= "Following (#{@user_info[:following]})" %></p>
